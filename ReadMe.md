@@ -2,6 +2,6 @@
 
 ## train the MolT5 model
 
-'''cmd
+```cmd
 bash scripts/train_smiles2text.sh 0
-'''
+```
