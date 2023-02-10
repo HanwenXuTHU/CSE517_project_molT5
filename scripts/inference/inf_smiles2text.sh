@@ -3,8 +3,9 @@ LR=5e-4
 BATCH_SIZE=16
 MAX_LEN=128
 OPTION=laituan245/molt5-small
-DATADIR=/data/xuhw/Courses/NLP/MolT5_reimplementation/data/
-SAVEDIR=/data/xuhw/Courses/NLP/MolT5_reimplementation/results/smiles2text/MolT5_small_epoch$EPOCH-lr$LR-batch$BATCH_SIZE-maxlen$MAX_LEN
+DATADIR=./data/
+SAVEDIR=./results/smiles2text/MolT5_small_epoch$EPOCH-lr$LR-batch$BATCH_SIZE-maxlen$MAX_LEN
+DEVICE=3
 
 python inference.py \
     --epoch $EPOCH \
@@ -14,4 +15,4 @@ python inference.py \
     --option $OPTION \
     --data_path $DATADIR \
     --save_path $SAVEDIR \
-    --device $0
+    --device $DEVICE

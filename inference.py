@@ -8,17 +8,20 @@ from dataset import MolT5Dataset
 from torch.utils.data import DataLoader
 from metrics import calculate_bleu_score, calculate_rouge_score
 
-def main():
-    test_dataset = MolT5Dataset(args['data_path'], 'test', args['max_len'])
+def main(args):
+    test_dataset = MolT5Dataset(os.path.join(args['data_path'], 'test.txt'))
     test_dataloader = DataLoader(test_dataset, batch_size=args['batch_size'], shuffle=False)
     model = MolT5_smiles2text(option=args['option'], max_len=args['max_len'])
     model.load_state_dict(torch.load(os.path.join(args['save_path'], 'model_best.pt')))
+
+    num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print('num_params: {}'.format(num_params))
 
     model.eval()
     c_list = []
     pred_list, label_list = [], []
     with torch.no_grad():
-        for batch in test_dataloader:
+        for batch in tqdm(test_dataloader):
             cid_list, smiles_list, description_list = batch
             pred = model.generate(smiles_list)
             c_list.extend(cid_list)
@@ -29,7 +32,11 @@ def main():
     bleu_score = calculate_bleu_score(pred_list, label_list)
     print('bleu score: {}'.format(bleu_score))
     # calculate the rouge score
-    rouge_score = calculate_rouge_score(pred_list, label_list)
+    metrics = ['rouge-n', 'rouge-l', 'rouge-w']
+    metrics = ['rouge-l']
+    rouge_scores = calculate_rouge_score(pred_list, label_list, metrics=metrics)
+    for metric in metrics:
+        print('{} score: {}'.format(metric, rouge_scores[metric]))
     # save the results to file
     with open(os.path.join(args['save_path'], 'test_results.txt'), 'w') as f:
         for cid, pred, label in zip(c_list, pred_list, label_list):
@@ -52,4 +59,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
     args = args.__dict__
     main(args)
-    main()
