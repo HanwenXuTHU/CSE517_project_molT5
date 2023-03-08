@@ -1,4 +1,5 @@
 import os
+import numpy as np
 import torch
 from torch import nn
 import argparse
@@ -10,6 +11,8 @@ from metrics import calculate_bleu_score, calculate_rouge_score
 
 def main(args):
     test_dataset = MolT5Dataset(os.path.join(args['data_path'], 'test.txt'))
+    if args['debug']:
+        test_dataset = test_dataset.__subset__(range(3*args['batch_size']))
     test_dataloader = DataLoader(test_dataset, batch_size=args['batch_size'], shuffle=False)
     model = MolT5_smiles2text(option=args['option'], max_len=args['max_len'])
     model.load_state_dict(torch.load(os.path.join(args['save_path'], 'model_best.pt')))
@@ -29,14 +32,21 @@ def main(args):
             label_list.extend(description_list)
     
     # calculate the bleu score
-    bleu_score = calculate_bleu_score(pred_list, label_list)
-    print('bleu score: {}'.format(bleu_score))
+    bleu_metrics = ['bleu-2', 'bleu-4']
+    bleu_scores = calculate_bleu_score(pred_list, label_list, metrics=bleu_metrics)
+    for metric in bleu_metrics:
+        print('{} score: {}'.format(metric, bleu_scores[metric]))
+
     # calculate the rouge score
-    metrics = ['rouge-n', 'rouge-l', 'rouge-w']
-    metrics = ['rouge-l']
-    rouge_scores = calculate_rouge_score(pred_list, label_list, metrics=metrics)
-    for metric in metrics:
+    rouge_metrics = ['rouge-l', 'rouge-1', 'rouge-2']
+    rouge_scores = calculate_rouge_score(pred_list, label_list, metrics=rouge_metrics)
+    for metric in rouge_metrics:
         print('{} score: {}'.format(metric, rouge_scores[metric]))
+    
+    # sort the results
+    bleu_score = bleu_scores[bleu_metrics[0]]
+    bleu_score, pred_list, label_list = zip(*sorted(zip(bleu_score, pred_list, label_list), reverse=True))
+
     # save the results to file
     with open(os.path.join(args['save_path'], 'test_results.txt'), 'w') as f:
         for cid, pred, label in zip(c_list, pred_list, label_list):
@@ -56,6 +66,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_path', type=str, default='/data/xuhw/Courses/NLP/MolT5_reimplementation/results/test/model/')
     parser.add_argument('--device', type=str, default='0')
     parser.add_argument('--warmup_steps', type=int, default=4000)
+    parser.add_argument('--debug', action='store_true')
     args = parser.parse_args()
     args = args.__dict__
     main(args)

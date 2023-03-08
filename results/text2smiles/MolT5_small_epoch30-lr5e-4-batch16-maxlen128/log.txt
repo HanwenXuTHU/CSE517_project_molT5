@@ -1,0 +1,75 @@
+2023-03-07 19:20:59,676 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 19:20:59,677 - __main__ - INFO - Epoch: 0, Loss: 1.605137825012207, Best Loss: 0.7836822017955322
+2023-03-07 19:30:04,470 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 19:30:04,471 - __main__ - INFO - Epoch: 1, Loss: 0.7267171144485474, Best Loss: 0.4624499341715938
+2023-03-07 19:39:06,247 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 19:39:06,248 - __main__ - INFO - Epoch: 2, Loss: 0.5958650708198547, Best Loss: 0.3787416005192171
+2023-03-07 19:48:02,810 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 19:48:02,811 - __main__ - INFO - Epoch: 3, Loss: 0.49053752422332764, Best Loss: 0.3200448341127754
+2023-03-07 19:56:58,860 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 19:56:58,861 - __main__ - INFO - Epoch: 4, Loss: 0.41833141446113586, Best Loss: 0.2782957739588143
+2023-03-07 20:06:01,654 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 20:06:01,655 - __main__ - INFO - Epoch: 5, Loss: 0.3726651966571808, Best Loss: 0.24622132330413016
+2023-03-07 20:15:06,870 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 20:15:06,871 - __main__ - INFO - Epoch: 6, Loss: 0.34044092893600464, Best Loss: 0.22575239808375136
+2023-03-07 20:24:07,733 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-07 20:24:07,734 - __main__ - INFO - Epoch: 7, Loss: 0.2775542438030243, Best Loss: 0.20548076369768173
+2023-03-08 03:48:16,491 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 03:48:16,492 - __main__ - INFO - Epoch: 0, Loss: 1.6580233573913574, Best Loss: 0.8050479552020197
+2023-03-08 03:57:57,902 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 03:57:57,903 - __main__ - INFO - Epoch: 1, Loss: 0.7112500071525574, Best Loss: 0.4575813943925114
+2023-03-08 04:07:40,785 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 04:07:40,786 - __main__ - INFO - Epoch: 2, Loss: 0.5612913966178894, Best Loss: 0.3724632938414958
+2023-03-08 04:17:30,265 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 04:17:30,266 - __main__ - INFO - Epoch: 3, Loss: 0.5084711313247681, Best Loss: 0.32185062262171105
+2023-03-08 04:27:27,715 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 04:27:27,719 - __main__ - INFO - Epoch: 4, Loss: 0.4236190915107727, Best Loss: 0.2794322009391832
+2023-03-08 04:37:17,627 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 04:37:17,628 - __main__ - INFO - Epoch: 5, Loss: 0.37943071126937866, Best Loss: 0.2473607176311926
+2023-03-08 04:46:57,696 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 04:46:57,697 - __main__ - INFO - Epoch: 6, Loss: 0.3145865499973297, Best Loss: 0.22088048049217265
+2023-03-08 04:56:35,769 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 04:56:35,770 - __main__ - INFO - Epoch: 7, Loss: 0.2722128927707672, Best Loss: 0.20175379147564151
+2023-03-08 05:06:16,197 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 05:06:16,200 - __main__ - INFO - Epoch: 8, Loss: 0.24166768789291382, Best Loss: 0.1817892463742822
+2023-03-08 05:15:59,772 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 05:15:59,773 - __main__ - INFO - Epoch: 9, Loss: 0.22129783034324646, Best Loss: 0.17091187305640482
+2023-03-08 05:25:46,633 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 05:25:46,634 - __main__ - INFO - Epoch: 10, Loss: 0.2089369297027588, Best Loss: 0.15869745255812356
+2023-03-08 05:35:38,342 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 05:35:38,343 - __main__ - INFO - Epoch: 11, Loss: 0.18820889294147491, Best Loss: 0.15002114012621445
+2023-03-08 05:45:28,110 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 05:45:28,111 - __main__ - INFO - Epoch: 12, Loss: 0.17931480705738068, Best Loss: 0.1471019694986551
+2023-03-08 05:55:16,549 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 05:55:16,550 - __main__ - INFO - Epoch: 13, Loss: 0.15569493174552917, Best Loss: 0.13549595752703975
+2023-03-08 06:05:08,080 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 06:05:08,081 - __main__ - INFO - Epoch: 14, Loss: 0.14246545732021332, Best Loss: 0.13094817580664217
+2023-03-08 06:15:04,170 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 06:15:04,171 - __main__ - INFO - Epoch: 15, Loss: 0.14348942041397095, Best Loss: 0.12564133028477284
+2023-03-08 06:24:45,110 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 06:24:45,111 - __main__ - INFO - Epoch: 16, Loss: 0.1431276500225067, Best Loss: 0.1228419727497343
+2023-03-08 06:34:35,243 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 06:34:35,244 - __main__ - INFO - Epoch: 17, Loss: 0.12944380939006805, Best Loss: 0.11969394242202024
+2023-03-08 06:44:20,351 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 06:44:20,352 - __main__ - INFO - Epoch: 18, Loss: 0.11715955287218094, Best Loss: 0.11508331746582828
+2023-03-08 06:54:07,389 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 06:54:07,392 - __main__ - INFO - Epoch: 19, Loss: 0.12060598284006119, Best Loss: 0.111875563841943
+2023-03-08 07:04:06,005 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 07:04:06,007 - __main__ - INFO - Epoch: 20, Loss: 0.12168904393911362, Best Loss: 0.10980078741764096
+2023-03-08 07:14:00,427 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 07:14:00,431 - __main__ - INFO - Epoch: 21, Loss: 0.1314724087715149, Best Loss: 0.10742150702410273
+2023-03-08 07:23:44,162 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 07:23:44,163 - __main__ - INFO - Epoch: 22, Loss: 0.11760488897562027, Best Loss: 0.10650948195713733
+2023-03-08 07:32:51,199 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 07:32:51,200 - __main__ - INFO - Epoch: 23, Loss: 0.11170773953199387, Best Loss: 0.10496178780488923
+2023-03-08 07:41:54,518 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 07:41:54,519 - __main__ - INFO - Epoch: 24, Loss: 0.11374202370643616, Best Loss: 0.1040308355097322
+2023-03-08 07:50:50,826 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 07:50:50,830 - __main__ - INFO - Epoch: 25, Loss: 0.10564170032739639, Best Loss: 0.10361679633494449
+2023-03-08 07:59:57,430 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 07:59:57,431 - __main__ - INFO - Epoch: 26, Loss: 0.1030949056148529, Best Loss: 0.10258202170188303
+2023-03-08 08:08:42,830 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 08:08:42,831 - __main__ - INFO - Epoch: 27, Loss: 0.10514191538095474, Best Loss: 0.10221765154369782
+2023-03-08 08:17:17,714 - __main__ - INFO - save model to ./results/text2smiles/MolT5_small_epoch30-lr5e-4-batch16-maxlen128/model_best.pt
+2023-03-08 08:17:17,716 - __main__ - INFO - Epoch: 28, Loss: 0.10292339324951172, Best Loss: 0.10135010197974635
+2023-03-08 08:25:44,932 - __main__ - INFO - Epoch: 29, Loss: 0.10189072787761688, Best Loss: 0.10135010197974635

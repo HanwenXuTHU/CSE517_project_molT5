@@ -1,7 +1,7 @@
 '''
 We implemented loading the data
 '''
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, Subset
 
 class MolT5Dataset(Dataset):
     def __init__(self, data_path='data/train.txt'):
@@ -19,3 +19,6 @@ class MolT5Dataset(Dataset):
 
     def __getitem__(self, idx):
         return self.cid_list[idx], self.smiles_list[idx], self.description_list[idx]
+    
+    def __subset__(self, indices):
+        return Subset(self, indices)

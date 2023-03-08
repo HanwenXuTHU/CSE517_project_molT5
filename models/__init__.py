@@ -1,1 +1,1 @@
-from .MolT5 import MolT5_smiles2text
+from .MolT5 import MolT5_smiles2text, MolT5_text2smiles
