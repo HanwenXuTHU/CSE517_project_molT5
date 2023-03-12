@@ -45,8 +45,6 @@ class MolT5_smiles2text(nn.Module):
                                         early_stopping=True,
                                         skip_special_tokens=True)
 
-
-
 class MolT5_text2smiles(nn.Module):
     def __init__(self, option='t5-base', max_len=512):
         super(MolT5_text2smiles, self).__init__()

@@ -4,10 +4,10 @@ BATCH_SIZE=12
 MAX_LEN=128
 OPTION=laituan245/molt5-base
 DATADIR=./data/
-SAVEDIR=./results/smiles2text/MolT5_base_epoch$EPOCH-lr$LR-batch$BATCH_SIZE-maxlen$MAX_LEN
+SAVEDIR=./results/text2smiles/MolT5_base_epoch$EPOCH-lr$LR-batch$BATCH_SIZE-maxlen$MAX_LEN
 DEVICE=$1
 
-python train_smiles2text.py \
+python inference_text2smiles.py \
     --epoch $EPOCH \
     --lr $LR \
     --batch_size $BATCH_SIZE \

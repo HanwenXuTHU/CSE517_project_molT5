@@ -7,7 +7,7 @@ DATADIR=./data/
 SAVEDIR=./results/smiles2text/MolT5_base_epoch$EPOCH-lr$LR-batch$BATCH_SIZE-maxlen$MAX_LEN
 DEVICE=$1
 
-python train_smiles2text.py \
+python inference_smiles2text.py \
     --epoch $EPOCH \
     --lr $LR \
     --batch_size $BATCH_SIZE \
